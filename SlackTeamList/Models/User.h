@@ -19,7 +19,7 @@
     BOOL is_owner;
     BOOL has_files;
     BOOL has_2fa;
-    BOOL presence;
+    NSString* presence;
     
     NSString* first_name;
     NSString* last_name;
@@ -43,7 +43,7 @@
 @property (nonatomic) BOOL is_owner;
 @property (nonatomic) BOOL has_files;
 @property (nonatomic) BOOL has_2fa;
-@property (nonatomic) BOOL presence;
+@property (nonatomic) NSString* presence;
 
 @property (nonatomic) NSString* first_name;
 @property (nonatomic) NSString* last_name;

@@ -92,9 +92,11 @@
     NSIndexPath* path = [NSIndexPath indexPathForRow:0 inSection:0];
     TeamUserTableViewCell* cell = [tableView cellForRowAtIndexPath:path];
     [cell setSelected:NO];
-    
-    selectedUser = [teamUserArray objectAtIndex:indexPath.row];
-    [self performSegueWithIdentifier:@"teamListtoUserProfileSegue" sender:self];
+    if(indexPath.row < [teamUserArray count])
+    {
+        selectedUser = [teamUserArray objectAtIndex:indexPath.row];
+        [self performSegueWithIdentifier:@"teamListtoUserProfileSegue" sender:self];
+    }
     
 }
 
@@ -301,9 +303,9 @@
                         
                         if([member objectForKey:@"presence"] != [NSNull null])
                         {
-                            if ([[member objectForKey:@"presence"] isEqualToString: @""])
+                            if (![[member objectForKey:@"presence"] isEqualToString: @""])
                             {
-                                teamMember.presence = (BOOL)[member objectForKey:@"presence"];
+                                teamMember.presence = (NSString*)[member objectForKey:@"presence"];
                             }
                         }
                         

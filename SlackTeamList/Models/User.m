@@ -44,7 +44,7 @@
         is_owner = false;
         has_files = false;
         has_2fa = false;
-        presence = true;
+        presence = @"";
         first_name = @"";
         last_name = @"";
         real_name = @"";
@@ -139,7 +139,7 @@
     
     [coder encodeBool:self.has_2fa forKey:@"has_2fa"];
     
-    [coder encodeBool:self.presence forKey:@"presence"];
+    [coder encodeObject:self.presence forKey:@"presence"];
     
     [coder encodeObject:self.first_name forKey:@"first_name"];
     
@@ -189,7 +189,7 @@
         
         self.has_2fa = [aDecoder decodeBoolForKey:@"has_2fa"];
         
-        self.presence = [aDecoder decodeBoolForKey:@"presence"];
+        self.presence = [aDecoder decodeObjectForKey:@"presence"];
         
         self.first_name = [aDecoder decodeObjectForKey:@"first_name"];
         
