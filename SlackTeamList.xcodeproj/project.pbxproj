@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB1F43551CC69FB200F795A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43541CC69FB200F795A7 /* main.m */; };
+		EB1F43581CC69FB200F795A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43571CC69FB200F795A7 /* AppDelegate.m */; };
+		EB1F435B1CC69FB200F795A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F435A1CC69FB200F795A7 /* ViewController.m */; };
+		EB1F435E1CC69FB200F795A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1F435C1CC69FB200F795A7 /* Main.storyboard */; };
+		EB1F43601CC69FB200F795A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1F435F1CC69FB200F795A7 /* Assets.xcassets */; };
+		EB1F43631CC69FB200F795A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1F43611CC69FB200F795A7 /* LaunchScreen.storyboard */; };
+		EB1F436E1CC69FB200F795A7 /* SlackTeamListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F436D1CC69FB200F795A7 /* SlackTeamListTests.m */; };
+		EB1F43791CC69FB200F795A7 /* SlackTeamListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43781CC69FB200F795A7 /* SlackTeamListUITests.m */; };
+		EB1F438A1CC6A18E00F795A7 /* TeamListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43891CC6A18E00F795A7 /* TeamListViewController.m */; };
+		EB1F438D1CC6A23A00F795A7 /* UserDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F438C1CC6A23A00F795A7 /* UserDetailViewController.m */; };
+		EB1F43961CC6A3A100F795A7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43951CC6A3A100F795A7 /* User.m */; };
+		EB1F439A1CC6A80900F795A7 /* TeamUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43991CC6A80900F795A7 /* TeamUserTableViewCell.m */; };
+		EB1F439E1CC6ACAF00F795A7 /* FileCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F439D1CC6ACAF00F795A7 /* FileCache.m */; };
+		EB1F43A11CC6ACC200F795A7 /* SlackAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43A01CC6ACC200F795A7 /* SlackAPI.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB1F436A1CC69FB200F795A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1F43481CC69FB200F795A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1F434F1CC69FB200F795A7;
+			remoteInfo = SlackTeamList;
+		};
+		EB1F43751CC69FB200F795A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1F43481CC69FB200F795A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1F434F1CC69FB200F795A7;
+			remoteInfo = SlackTeamList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB1F43501CC69FB200F795A7 /* SlackTeamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackTeamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1F43541CC69FB200F795A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB1F43561CC69FB200F795A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB1F43571CC69FB200F795A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB1F43591CC69FB200F795A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EB1F435A1CC69FB200F795A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EB1F435D1CC69FB200F795A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB1F435F1CC69FB200F795A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1F43621CC69FB200F795A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB1F43641CC69FB200F795A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1F43691CC69FB200F795A7 /* SlackTeamListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackTeamListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1F436D1CC69FB200F795A7 /* SlackTeamListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlackTeamListTests.m; sourceTree = "<group>"; };
+		EB1F436F1CC69FB200F795A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1F43741CC69FB200F795A7 /* SlackTeamListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackTeamListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1F43781CC69FB200F795A7 /* SlackTeamListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlackTeamListUITests.m; sourceTree = "<group>"; };
+		EB1F437A1CC69FB200F795A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1F43881CC6A18E00F795A7 /* TeamListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamListViewController.h; sourceTree = "<group>"; };
+		EB1F43891CC6A18E00F795A7 /* TeamListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamListViewController.m; sourceTree = "<group>"; };
+		EB1F438B1CC6A23A00F795A7 /* UserDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailViewController.h; sourceTree = "<group>"; };
+		EB1F438C1CC6A23A00F795A7 /* UserDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailViewController.m; sourceTree = "<group>"; };
+		EB1F43941CC6A3A100F795A7 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Models/User.h; sourceTree = "<group>"; };
+		EB1F43951CC6A3A100F795A7 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Models/User.m; sourceTree = "<group>"; };
+		EB1F43981CC6A80900F795A7 /* TeamUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamUserTableViewCell.h; sourceTree = "<group>"; };
+		EB1F43991CC6A80900F795A7 /* TeamUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamUserTableViewCell.m; sourceTree = "<group>"; };
+		EB1F439C1CC6ACAF00F795A7 /* FileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCache.h; sourceTree = "<group>"; };
+		EB1F439D1CC6ACAF00F795A7 /* FileCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileCache.m; sourceTree = "<group>"; };
+		EB1F439F1CC6ACC200F795A7 /* SlackAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlackAPI.h; sourceTree = "<group>"; };
+		EB1F43A01CC6ACC200F795A7 /* SlackAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlackAPI.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB1F434D1CC69FB200F795A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1F43661CC69FB200F795A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1F43711CC69FB200F795A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB1F43471CC69FB200F795A7 = {
+			isa = PBXGroup;
+			children = (
+				EB1F43521CC69FB200F795A7 /* SlackTeamList */,
+				EB1F436C1CC69FB200F795A7 /* SlackTeamListTests */,
+				EB1F43771CC69FB200F795A7 /* SlackTeamListUITests */,
+				EB1F43511CC69FB200F795A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB1F43511CC69FB200F795A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F43501CC69FB200F795A7 /* SlackTeamList.app */,
+				EB1F43691CC69FB200F795A7 /* SlackTeamListTests.xctest */,
+				EB1F43741CC69FB200F795A7 /* SlackTeamListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB1F43521CC69FB200F795A7 /* SlackTeamList */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F439B1CC6AC6E00F795A7 /* Utils */,
+				EB1F43971CC6A7AA00F795A7 /* CellItems */,
+				EB1F43871CC6A10A00F795A7 /* Models */,
+				EB1F43861CC6A10000F795A7 /* ViewControllers */,
+				EB1F43561CC69FB200F795A7 /* AppDelegate.h */,
+				EB1F43571CC69FB200F795A7 /* AppDelegate.m */,
+				EB1F435C1CC69FB200F795A7 /* Main.storyboard */,
+				EB1F435F1CC69FB200F795A7 /* Assets.xcassets */,
+				EB1F43611CC69FB200F795A7 /* LaunchScreen.storyboard */,
+				EB1F43641CC69FB200F795A7 /* Info.plist */,
+				EB1F43531CC69FB200F795A7 /* Supporting Files */,
+			);
+			path = SlackTeamList;
+			sourceTree = "<group>";
+		};
+		EB1F43531CC69FB200F795A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F43541CC69FB200F795A7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB1F436C1CC69FB200F795A7 /* SlackTeamListTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F436D1CC69FB200F795A7 /* SlackTeamListTests.m */,
+				EB1F436F1CC69FB200F795A7 /* Info.plist */,
+			);
+			path = SlackTeamListTests;
+			sourceTree = "<group>";
+		};
+		EB1F43771CC69FB200F795A7 /* SlackTeamListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F43781CC69FB200F795A7 /* SlackTeamListUITests.m */,
+				EB1F437A1CC69FB200F795A7 /* Info.plist */,
+			);
+			path = SlackTeamListUITests;
+			sourceTree = "<group>";
+		};
+		EB1F43861CC6A10000F795A7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F43591CC69FB200F795A7 /* ViewController.h */,
+				EB1F435A1CC69FB200F795A7 /* ViewController.m */,
+				EB1F43881CC6A18E00F795A7 /* TeamListViewController.h */,
+				EB1F43891CC6A18E00F795A7 /* TeamListViewController.m */,
+				EB1F438B1CC6A23A00F795A7 /* UserDetailViewController.h */,
+				EB1F438C1CC6A23A00F795A7 /* UserDetailViewController.m */,
+			);
+			name = ViewControllers;
+			path = ViewControlers;
+			sourceTree = "<group>";
+		};
+		EB1F43871CC6A10A00F795A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F43941CC6A3A100F795A7 /* User.h */,
+				EB1F43951CC6A3A100F795A7 /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EB1F43971CC6A7AA00F795A7 /* CellItems */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F43981CC6A80900F795A7 /* TeamUserTableViewCell.h */,
+				EB1F43991CC6A80900F795A7 /* TeamUserTableViewCell.m */,
+			);
+			path = CellItems;
+			sourceTree = "<group>";
+		};
+		EB1F439B1CC6AC6E00F795A7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F439C1CC6ACAF00F795A7 /* FileCache.h */,
+				EB1F439D1CC6ACAF00F795A7 /* FileCache.m */,
+				EB1F439F1CC6ACC200F795A7 /* SlackAPI.h */,
+				EB1F43A01CC6ACC200F795A7 /* SlackAPI.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB1F434F1CC69FB200F795A7 /* SlackTeamList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1F437D1CC69FB200F795A7 /* Build configuration list for PBXNativeTarget "SlackTeamList" */;
+			buildPhases = (
+				EB1F434C1CC69FB200F795A7 /* Sources */,
+				EB1F434D1CC69FB200F795A7 /* Frameworks */,
+				EB1F434E1CC69FB200F795A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlackTeamList;
+			productName = SlackTeamList;
+			productReference = EB1F43501CC69FB200F795A7 /* SlackTeamList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB1F43681CC69FB200F795A7 /* SlackTeamListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1F43801CC69FB200F795A7 /* Build configuration list for PBXNativeTarget "SlackTeamListTests" */;
+			buildPhases = (
+				EB1F43651CC69FB200F795A7 /* Sources */,
+				EB1F43661CC69FB200F795A7 /* Frameworks */,
+				EB1F43671CC69FB200F795A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1F436B1CC69FB200F795A7 /* PBXTargetDependency */,
+			);
+			name = SlackTeamListTests;
+			productName = SlackTeamListTests;
+			productReference = EB1F43691CC69FB200F795A7 /* SlackTeamListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB1F43731CC69FB200F795A7 /* SlackTeamListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1F43831CC69FB200F795A7 /* Build configuration list for PBXNativeTarget "SlackTeamListUITests" */;
+			buildPhases = (
+				EB1F43701CC69FB200F795A7 /* Sources */,
+				EB1F43711CC69FB200F795A7 /* Frameworks */,
+				EB1F43721CC69FB200F795A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1F43761CC69FB200F795A7 /* PBXTargetDependency */,
+			);
+			name = SlackTeamListUITests;
+			productName = SlackTeamListUITests;
+			productReference = EB1F43741CC69FB200F795A7 /* SlackTeamListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB1F43481CC69FB200F795A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Slack Demo";
+				TargetAttributes = {
+					EB1F434F1CC69FB200F795A7 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					EB1F43681CC69FB200F795A7 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EB1F434F1CC69FB200F795A7;
+					};
+					EB1F43731CC69FB200F795A7 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EB1F434F1CC69FB200F795A7;
+					};
+				};
+			};
+			buildConfigurationList = EB1F434B1CC69FB200F795A7 /* Build configuration list for PBXProject "SlackTeamList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB1F43471CC69FB200F795A7;
+			productRefGroup = EB1F43511CC69FB200F795A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB1F434F1CC69FB200F795A7 /* SlackTeamList */,
+				EB1F43681CC69FB200F795A7 /* SlackTeamListTests */,
+				EB1F43731CC69FB200F795A7 /* SlackTeamListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB1F434E1CC69FB200F795A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1F43631CC69FB200F795A7 /* LaunchScreen.storyboard in Resources */,
+				EB1F43601CC69FB200F795A7 /* Assets.xcassets in Resources */,
+				EB1F435E1CC69FB200F795A7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1F43671CC69FB200F795A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1F43721CC69FB200F795A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB1F434C1CC69FB200F795A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1F435B1CC69FB200F795A7 /* ViewController.m in Sources */,
+				EB1F43961CC6A3A100F795A7 /* User.m in Sources */,
+				EB1F438A1CC6A18E00F795A7 /* TeamListViewController.m in Sources */,
+				EB1F439E1CC6ACAF00F795A7 /* FileCache.m in Sources */,
+				EB1F439A1CC6A80900F795A7 /* TeamUserTableViewCell.m in Sources */,
+				EB1F43581CC69FB200F795A7 /* AppDelegate.m in Sources */,
+				EB1F438D1CC6A23A00F795A7 /* UserDetailViewController.m in Sources */,
+				EB1F43551CC69FB200F795A7 /* main.m in Sources */,
+				EB1F43A11CC6ACC200F795A7 /* SlackAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1F43651CC69FB200F795A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1F436E1CC69FB200F795A7 /* SlackTeamListTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1F43701CC69FB200F795A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1F43791CC69FB200F795A7 /* SlackTeamListUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB1F436B1CC69FB200F795A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1F434F1CC69FB200F795A7 /* SlackTeamList */;
+			targetProxy = EB1F436A1CC69FB200F795A7 /* PBXContainerItemProxy */;
+		};
+		EB1F43761CC69FB200F795A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1F434F1CC69FB200F795A7 /* SlackTeamList */;
+			targetProxy = EB1F43751CC69FB200F795A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB1F435C1CC69FB200F795A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1F435D1CC69FB200F795A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB1F43611CC69FB200F795A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1F43621CC69FB200F795A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB1F437B1CC69FB200F795A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EB1F437C1CC69FB200F795A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB1F437E1CC69FB200F795A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SlackTeamList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slack.SlackTeamList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EB1F437F1CC69FB200F795A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SlackTeamList/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slack.SlackTeamList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EB1F43811CC69FB200F795A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SlackTeamListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slack.SlackTeamListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackTeamList.app/SlackTeamList";
+			};
+			name = Debug;
+		};
+		EB1F43821CC69FB200F795A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SlackTeamListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slack.SlackTeamListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackTeamList.app/SlackTeamList";
+			};
+			name = Release;
+		};
+		EB1F43841CC69FB200F795A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SlackTeamListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slack.SlackTeamListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SlackTeamList;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EB1F43851CC69FB200F795A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SlackTeamListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slack.SlackTeamListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SlackTeamList;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB1F434B1CC69FB200F795A7 /* Build configuration list for PBXProject "SlackTeamList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1F437B1CC69FB200F795A7 /* Debug */,
+				EB1F437C1CC69FB200F795A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1F437D1CC69FB200F795A7 /* Build configuration list for PBXNativeTarget "SlackTeamList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1F437E1CC69FB200F795A7 /* Debug */,
+				EB1F437F1CC69FB200F795A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB1F43801CC69FB200F795A7 /* Build configuration list for PBXNativeTarget "SlackTeamListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1F43811CC69FB200F795A7 /* Debug */,
+				EB1F43821CC69FB200F795A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB1F43831CC69FB200F795A7 /* Build configuration list for PBXNativeTarget "SlackTeamListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1F43841CC69FB200F795A7 /* Debug */,
+				EB1F43851CC69FB200F795A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB1F43481CC69FB200F795A7 /* Project object */;
+}
