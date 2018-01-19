@@ -266,7 +266,6 @@
     copy.image_192 = self.image_192;
     
     return copy;
-    
 }
 
 @end

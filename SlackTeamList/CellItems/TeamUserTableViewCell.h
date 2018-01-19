@@ -9,25 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface TeamUserTableViewCell : UITableViewCell
-{
-    
-    IBOutlet UILabel *userNameLabel;
-    
-    IBOutlet UILabel *userPositionLabel;
-    IBOutlet UIImageView *userProfileImageView;
-    
-    IBOutlet UIImageView *miniPhoneImageView;
-    IBOutlet UIImageView *miniSkypeImageView;
-    IBOutlet UIImageView *miniEmailImageView;
-    
-}
 
-@property (strong, nonatomic) IBOutlet UILabel *userNameLabel;
-@property (strong, nonatomic) IBOutlet UILabel *userPositionLabel;
-@property (strong, nonatomic) IBOutlet UIImageView *userProfileImageView;
+@property (strong, nonatomic)  UILabel *userNameLabel;
+@property (strong, nonatomic)  UILabel *userPositionLabel;
+@property (strong, nonatomic)  UIImageView *userProfileImageView;
 
-@property (strong, nonatomic) IBOutlet UIImageView *miniPhoneImageView;
-@property (strong, nonatomic) IBOutlet UIImageView *miniSkypeImageView;
-@property (strong, nonatomic) IBOutlet UIImageView *miniEmailImageView;
+@property (strong, nonatomic)  UIImageView *miniPhoneImageView;
+
+@property (strong, nonatomic)  UIImageView *miniEmailImageView;
+@property (strong, nonatomic)  UIImageView *miniSkypeImageView;
+-(void)initView;
 
 @end
