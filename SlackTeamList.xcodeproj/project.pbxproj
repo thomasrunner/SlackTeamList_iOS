@@ -186,8 +186,7 @@
 				EB1F438B1CC6A23A00F795A7 /* UserDetailViewController.h */,
 				EB1F438C1CC6A23A00F795A7 /* UserDetailViewController.m */,
 			);
-			name = ViewControllers;
-			path = ViewControlers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		EB1F43871CC6A10A00F795A7 /* Models */ = {
