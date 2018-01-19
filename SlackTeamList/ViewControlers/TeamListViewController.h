@@ -8,14 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TeamListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
-{
-    
-    IBOutlet UITableView *teamListTableView;
-    
-    
-}
-
-@property (strong, nonatomic) IBOutlet UITableView *teamListTableView;
+@interface TeamListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIGestureRecognizerDelegate>
 
 @end

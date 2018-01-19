@@ -7,79 +7,59 @@
 //
 
 #import "UserDetailViewController.h"
+#import "UserDetailsView.h"
 
-@interface UserDetailViewController ()
+@interface UserDetailViewController()
 
-
+    @property (nonatomic, strong) UserDetailsView *view;
 
 @end
 
 @implementation UserDetailViewController
-@synthesize selectedUser;
-@synthesize userPositionLabel;
-@synthesize userEmailButton;
-@synthesize userLocalTimeLabel;
-@synthesize userPhoneButton;
-@synthesize userBackgroundImageView;
-@synthesize userProfileName;
-@synthesize userProfileDisplayName;
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
-    
-    [self downloadTeamMember];
-}
+@synthesize view;
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+- (void)loadView
+{
+    self.view = [[UserDetailsView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.automaticallyAdjustsScrollViewInsets =  NO;
+    self.edgesForExtendedLayout=UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars=NO;
+    self.automaticallyAdjustsScrollViewInsets=NO;
+
+    [self downloadTeamMember];
 }
 
 #pragma mark - Display Member Details
 -(void) downloadTeamMember {
     
-    NSURL * url = [NSURL URLWithString:selectedUser.image_192];
+    NSURL * url = [NSURL URLWithString:_selectedUser.image_192];
     NSData * data = [NSData dataWithContentsOfURL:url];
     
     if(data !=nil)
     {
-        userBackgroundImageView.image = [UIImage imageWithData:data];
+        self.view.userBackgroundImageView.image = [UIImage imageWithData:data];
     }
     
-    userProfileName.text = [selectedUser realNameWithNameFailover];
-    userProfileDisplayName.text = [selectedUser nameWithAtSymbol];
-    userPositionLabel.text = [selectedUser titleWithNameFailover];
+    self.view.userProfileName.text = [_selectedUser realNameWithNameFailover];
+    self.view.userProfileDisplayName.text = [_selectedUser nameWithAtSymbol];
+    self.view.userPositionLabel.text = [_selectedUser titleWithNameFailover];
     
-    [userPhoneButton setTitle: selectedUser.phone forState:UIControlStateNormal];
-    [userEmailButton setTitle: selectedUser.email forState:UIControlStateNormal];
+    [self.view.userPhoneButton setTitle: _selectedUser.phone forState:UIControlStateNormal];
+    [self.view.userEmailButton setTitle: _selectedUser.email forState:UIControlStateNormal];
 }
 
 
-
-- (IBAction)messageButton:(id)sender {
-    
-}
-
-- (IBAction)callButton:(id)sender {
-    
-}
-
-- (IBAction)moreButton:(id)sender {
-    
-}
-
-- (IBAction)userPhoneButton:(id)sender {
-    
-}
-
-- (IBAction)userEmailButton:(id)sender {
-    
-}
 @end
