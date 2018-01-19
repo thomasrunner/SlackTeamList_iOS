@@ -40,6 +40,12 @@
     self.automaticallyAdjustsScrollViewInsets=NO;
 
     [self downloadTeamMember];
+    
+}
+
+-(void) viewWillDisappear:(BOOL)animated
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - Display Member Details

@@ -12,7 +12,6 @@
 		E9C48BEC20118D2D00A4D7DA /* TeamListView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C48BEB20118D2D00A4D7DA /* TeamListView.m */; };
 		EB1F43551CC69FB200F795A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43541CC69FB200F795A7 /* main.m */; };
 		EB1F43581CC69FB200F795A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43571CC69FB200F795A7 /* AppDelegate.m */; };
-		EB1F435E1CC69FB200F795A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1F435C1CC69FB200F795A7 /* Main.storyboard */; };
 		EB1F43601CC69FB200F795A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1F435F1CC69FB200F795A7 /* Assets.xcassets */; };
 		EB1F43631CC69FB200F795A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1F43611CC69FB200F795A7 /* LaunchScreen.storyboard */; };
 		EB1F436E1CC69FB200F795A7 /* SlackTeamListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F436D1CC69FB200F795A7 /* SlackTeamListTests.m */; };
@@ -53,7 +52,6 @@
 		EB1F43541CC69FB200F795A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB1F43561CC69FB200F795A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB1F43571CC69FB200F795A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB1F435D1CC69FB200F795A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB1F435F1CC69FB200F795A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB1F43621CC69FB200F795A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB1F43641CC69FB200F795A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 		EB1F43531CC69FB200F795A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EB1F435C1CC69FB200F795A7 /* Main.storyboard */,
 				EB1F435F1CC69FB200F795A7 /* Assets.xcassets */,
 				EB1F43611CC69FB200F795A7 /* LaunchScreen.storyboard */,
 				EB1F43541CC69FB200F795A7 /* main.m */,
@@ -326,7 +323,6 @@
 			files = (
 				EB1F43631CC69FB200F795A7 /* LaunchScreen.storyboard in Resources */,
 				EB1F43601CC69FB200F795A7 /* Assets.xcassets in Resources */,
-				EB1F435E1CC69FB200F795A7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EB1F435C1CC69FB200F795A7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB1F435D1CC69FB200F795A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EB1F43611CC69FB200F795A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -15,6 +15,7 @@
     self = [super initWithFrame:frame];
     if (self)
     {
+        self.backgroundColor = [UIColor whiteColor];
         [self alignBackgroundImageAndLabels];
         [self alignMessageAndCallButtons];
         [self alignProfileDataLabels];

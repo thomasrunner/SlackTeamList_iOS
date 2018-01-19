@@ -51,21 +51,15 @@
     self.extendedLayoutIncludesOpaqueBars=NO;
     self.automaticallyAdjustsScrollViewInsets=NO;
     
-    //TABLE VIEW
-    self.view.teamListTableView.delegate = self;
-    self.view.teamListTableView.dataSource = self;
+    [self.view.teamListTableView registerClass:[TeamUserTableViewCell class] forCellReuseIdentifier: @"Cell"];
 
     //HELPERS
     teamUserArray = [[NSMutableArray alloc] init];
     fileCache = [[FileCache alloc] init];
-    [self downloadSlackTeamList:true];
-    
-    //PULL TO REFRESH
-    refreshControl = [[UIRefreshControl alloc] init];
-    [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
-    [self.view.teamListTableView addSubview:refreshControl];
     
     self.navigationItem.title = @"Team List";
+    
+    [self downloadSlackTeamList:false];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -100,10 +94,11 @@
     static NSString *CellIdentifier = @"Cell";
     TeamUserTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (cell == nil) {
-        cell = [[TeamUserTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        [cell initView];
-    }
+//  if (cell == nil) {
+//        cell = [[TeamUserTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//        [cell initView];
+//  }
+    [cell initView];
     if(indexPath.row < [teamUserArray count])
     {
         selectedUser = [teamUserArray objectAtIndex:indexPath.row];
@@ -165,7 +160,6 @@
         {
             fileExists = [[NSFileManager defaultManager] fileExistsAtPath:cacheFileName];
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                
                 //Caching Athlete Profile Photo
                 NSURL * url = [NSURL URLWithString:selectedUser.image_72];
                 NSData * data = [NSData dataWithContentsOfURL:url];
@@ -199,6 +193,7 @@
         selectedUser = [teamUserArray objectAtIndex:indexPath.row];
         UserDetailViewController *userDetailVC = [[UserDetailViewController alloc] init];
         userDetailVC.selectedUser = selectedUser;
+        
         [self.navigationController pushViewController:userDetailVC animated:true];
         self.navigationController.interactivePopGestureRecognizer.enabled = NO;
     }
@@ -223,10 +218,10 @@
     }
     
     [networkLayer downloadSlackTeamWithForce:forceDownload :^(NSMutableArray *array) {
-        teamUserArray = array;
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            if(teamUserArray != nil && [teamUserArray count] > 0)
+            teamUserArray = array;
+            if(teamUserArray != nil)
             {
                 if(self.view.teamListTableView.delegate == nil)
                 {
@@ -236,8 +231,12 @@
                     //////////////////////
                     
                     self.view.teamListTableView.decelerationRate = UIScrollViewDecelerationRateFast;
+                    
+                    //PULL TO REFRESH
+                    refreshControl = [[UIRefreshControl alloc] init];
+                    [refreshControl addTarget:self action:@selector(handleRefresh:) forControlEvents:UIControlEventValueChanged];
+                    [self.view.teamListTableView addSubview:refreshControl];
                 }
-                
                 [self.view.teamListTableView reloadData];
             }
             else

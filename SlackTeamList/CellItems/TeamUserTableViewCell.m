@@ -10,7 +10,6 @@
 
 @implementation TeamUserTableViewCell
 
-
 -(void)initView
 {
     self.frame = CGRectMake(0, 0, self.frame.size.width, 60.0f);
@@ -82,8 +81,6 @@
     
     
 }
-
-
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
