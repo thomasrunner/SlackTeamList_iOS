@@ -176,8 +176,7 @@
                         
                         teamMember = nil;
                     }
-                    
-                    
+                    [NSKeyedArchiver archiveRootObject:teamUserArray toFile:cacheFileName];
                 }
             }
             finished(teamUserArray);
