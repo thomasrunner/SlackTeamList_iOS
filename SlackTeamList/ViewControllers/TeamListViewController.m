@@ -38,7 +38,10 @@
 
 - (void)loadView
 {
-    self.view = [[TeamListView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    if(self.view == nil)
+    {
+        self.view = [[TeamListView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    }
 }
 
 - (void)viewDidLoad {
@@ -51,7 +54,7 @@
     self.extendedLayoutIncludesOpaqueBars=NO;
     self.automaticallyAdjustsScrollViewInsets=NO;
     
-    [self.view.teamListTableView registerClass:[TeamUserTableViewCell class] forCellReuseIdentifier: @"Cell"];
+    //[self.view.teamListTableView registerClass:[TeamUserTableViewCell class] forCellReuseIdentifier: @"Cell"];
 
     //HELPERS
     teamUserArray = [[NSMutableArray alloc] init];
@@ -94,11 +97,11 @@
     static NSString *CellIdentifier = @"Cell";
     TeamUserTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-//  if (cell == nil) {
-//        cell = [[TeamUserTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//        [cell initView];
-//  }
-    [cell initView];
+    if (cell == nil) {
+        cell = [[TeamUserTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        [cell initView];
+    }
+//    [cell initView];
     if(indexPath.row < [teamUserArray count])
     {
         selectedUser = [teamUserArray objectAtIndex:indexPath.row];

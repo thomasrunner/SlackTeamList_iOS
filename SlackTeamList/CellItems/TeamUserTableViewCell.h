@@ -10,14 +10,14 @@
 
 @interface TeamUserTableViewCell : UITableViewCell
 
-@property (strong, nonatomic)  UILabel *userNameLabel;
-@property (strong, nonatomic)  UILabel *userPositionLabel;
-@property (strong, nonatomic)  UIImageView *userProfileImageView;
+    @property (strong, nonatomic)  UILabel *userNameLabel;
+    @property (strong, nonatomic)  UILabel *userPositionLabel;
+    @property (strong, nonatomic)  UIImageView *userProfileImageView;
 
-@property (strong, nonatomic)  UIImageView *miniPhoneImageView;
+    @property (strong, nonatomic)  UIImageView *miniPhoneImageView;
+    @property (strong, nonatomic)  UIImageView *miniEmailImageView;
+    @property (strong, nonatomic)  UIImageView *miniSkypeImageView;
 
-@property (strong, nonatomic)  UIImageView *miniEmailImageView;
-@property (strong, nonatomic)  UIImageView *miniSkypeImageView;
--(void)initView;
+    -(void)initView;
 
 @end
