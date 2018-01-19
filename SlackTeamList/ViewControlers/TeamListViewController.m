@@ -148,7 +148,7 @@
         
         if(fileExists)
         {
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 NSURL *url = [NSURL fileURLWithPath:cacheFileName];
                 NSData *data = [[NSData alloc] initWithContentsOfURL:url];
                 if(data !=nil)
@@ -164,7 +164,7 @@
         else
         {
             fileExists = [[NSFileManager defaultManager] fileExistsAtPath:cacheFileName];
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
                 
                 //Caching Athlete Profile Photo
                 NSURL * url = [NSURL URLWithString:selectedUser.image_72];

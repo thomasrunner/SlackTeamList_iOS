@@ -9,31 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface User : NSObject <NSCoding>
-{
-    NSString *name;
-    NSString *userid;
-
-    BOOL deleted;
-    
-    BOOL is_admin;
-    BOOL is_owner;
-    BOOL has_files;
-    BOOL has_2fa;
-    NSString* presence;
-    
-    NSString* first_name;
-    NSString* last_name;
-    NSString* real_name;
-    NSString* title;
-    NSString* email;
-    NSString* skype;
-    NSString* phone;
-    NSString* image_24;
-    NSString* image_32;
-    NSString* image_48;
-    NSString* image_72;
-    NSString* image_192;
-}
 
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *userid;
