@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E97CED90200DE92B00D3724E /* NetworkLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E97CED8F200DE92B00D3724E /* NetworkLayer.m */; };
+		E9C48BE92011892200A4D7DA /* UserDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C48BE82011892200A4D7DA /* UserDetailsView.m */; };
+		E9C48BEC20118D2D00A4D7DA /* TeamListView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C48BEB20118D2D00A4D7DA /* TeamListView.m */; };
 		EB1F43551CC69FB200F795A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43541CC69FB200F795A7 /* main.m */; };
 		EB1F43581CC69FB200F795A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F43571CC69FB200F795A7 /* AppDelegate.m */; };
-		EB1F435B1CC69FB200F795A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1F435A1CC69FB200F795A7 /* ViewController.m */; };
 		EB1F435E1CC69FB200F795A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1F435C1CC69FB200F795A7 /* Main.storyboard */; };
 		EB1F43601CC69FB200F795A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1F435F1CC69FB200F795A7 /* Assets.xcassets */; };
 		EB1F43631CC69FB200F795A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1F43611CC69FB200F795A7 /* LaunchScreen.storyboard */; };
@@ -41,12 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E97CED8E200DE92B00D3724E /* NetworkLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkLayer.h; sourceTree = "<group>"; };
+		E97CED8F200DE92B00D3724E /* NetworkLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkLayer.m; sourceTree = "<group>"; };
+		E9C48BE72011892200A4D7DA /* UserDetailsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDetailsView.h; sourceTree = "<group>"; };
+		E9C48BE82011892200A4D7DA /* UserDetailsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDetailsView.m; sourceTree = "<group>"; };
+		E9C48BEA20118D2D00A4D7DA /* TeamListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeamListView.h; sourceTree = "<group>"; };
+		E9C48BEB20118D2D00A4D7DA /* TeamListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeamListView.m; sourceTree = "<group>"; };
 		EB1F43501CC69FB200F795A7 /* SlackTeamList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackTeamList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1F43541CC69FB200F795A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EB1F43561CC69FB200F795A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EB1F43571CC69FB200F795A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EB1F43591CC69FB200F795A7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EB1F435A1CC69FB200F795A7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EB1F435D1CC69FB200F795A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB1F435F1CC69FB200F795A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB1F43621CC69FB200F795A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,6 +102,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9C48BE6201188A100A4D7DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9C48BEA20118D2D00A4D7DA /* TeamListView.h */,
+				E9C48BEB20118D2D00A4D7DA /* TeamListView.m */,
+				E9C48BE72011892200A4D7DA /* UserDetailsView.h */,
+				E9C48BE82011892200A4D7DA /* UserDetailsView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EB1F43471CC69FB200F795A7 = {
 			isa = PBXGroup;
 			children = (
@@ -119,16 +136,14 @@
 		EB1F43521CC69FB200F795A7 /* SlackTeamList */ = {
 			isa = PBXGroup;
 			children = (
+				EB1F43641CC69FB200F795A7 /* Info.plist */,
+				EB1F43561CC69FB200F795A7 /* AppDelegate.h */,
+				EB1F43571CC69FB200F795A7 /* AppDelegate.m */,
+				E9C48BE6201188A100A4D7DA /* View */,
 				EB1F439B1CC6AC6E00F795A7 /* Utils */,
 				EB1F43971CC6A7AA00F795A7 /* CellItems */,
 				EB1F43871CC6A10A00F795A7 /* Models */,
 				EB1F43861CC6A10000F795A7 /* ViewControllers */,
-				EB1F43561CC69FB200F795A7 /* AppDelegate.h */,
-				EB1F43571CC69FB200F795A7 /* AppDelegate.m */,
-				EB1F435C1CC69FB200F795A7 /* Main.storyboard */,
-				EB1F435F1CC69FB200F795A7 /* Assets.xcassets */,
-				EB1F43611CC69FB200F795A7 /* LaunchScreen.storyboard */,
-				EB1F43641CC69FB200F795A7 /* Info.plist */,
 				EB1F43531CC69FB200F795A7 /* Supporting Files */,
 			);
 			path = SlackTeamList;
@@ -137,6 +152,9 @@
 		EB1F43531CC69FB200F795A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EB1F435C1CC69FB200F795A7 /* Main.storyboard */,
+				EB1F435F1CC69FB200F795A7 /* Assets.xcassets */,
+				EB1F43611CC69FB200F795A7 /* LaunchScreen.storyboard */,
 				EB1F43541CC69FB200F795A7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -163,8 +181,6 @@
 		EB1F43861CC6A10000F795A7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EB1F43591CC69FB200F795A7 /* ViewController.h */,
-				EB1F435A1CC69FB200F795A7 /* ViewController.m */,
 				EB1F43881CC6A18E00F795A7 /* TeamListViewController.h */,
 				EB1F43891CC6A18E00F795A7 /* TeamListViewController.m */,
 				EB1F438B1CC6A23A00F795A7 /* UserDetailViewController.h */,
@@ -199,6 +215,8 @@
 				EB1F439D1CC6ACAF00F795A7 /* FileCache.m */,
 				EB1F439F1CC6ACC200F795A7 /* SlackAPI.h */,
 				EB1F43A01CC6ACC200F795A7 /* SlackAPI.m */,
+				E97CED8E200DE92B00D3724E /* NetworkLayer.h */,
+				E97CED8F200DE92B00D3724E /* NetworkLayer.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -270,6 +288,7 @@
 				TargetAttributes = {
 					EB1F434F1CC69FB200F795A7 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 8MS2982HHA;
 					};
 					EB1F43681CC69FB200F795A7 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -333,7 +352,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1F435B1CC69FB200F795A7 /* ViewController.m in Sources */,
+				E9C48BE92011892200A4D7DA /* UserDetailsView.m in Sources */,
+				E9C48BEC20118D2D00A4D7DA /* TeamListView.m in Sources */,
+				E97CED90200DE92B00D3724E /* NetworkLayer.m in Sources */,
 				EB1F43961CC6A3A100F795A7 /* User.m in Sources */,
 				EB1F438A1CC6A18E00F795A7 /* TeamListViewController.m in Sources */,
 				EB1F439E1CC6ACAF00F795A7 /* FileCache.m in Sources */,
@@ -480,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8MS2982HHA;
 				INFOPLIST_FILE = SlackTeamList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slack.SlackTeamList;
@@ -492,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8MS2982HHA;
 				INFOPLIST_FILE = SlackTeamList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slack.SlackTeamList;
@@ -567,6 +590,7 @@
 				EB1F437F1CC69FB200F795A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB1F43801CC69FB200F795A7 /* Build configuration list for PBXNativeTarget "SlackTeamListTests" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +599,7 @@
 				EB1F43821CC69FB200F795A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB1F43831CC69FB200F795A7 /* Build configuration list for PBXNativeTarget "SlackTeamListUITests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +608,7 @@
 				EB1F43851CC69FB200F795A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "TeamListViewController.h"
 
 @interface AppDelegate ()
+
+    @property(strong, nonatomic) TeamListViewController *viewController;
 
 @end
 
@@ -17,6 +20,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.viewController = [[TeamListViewController alloc] init];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+    navController.navigationBarHidden = NO;
+    
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
