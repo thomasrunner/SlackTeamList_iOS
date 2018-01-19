@@ -10,7 +10,6 @@
 
 @implementation SlackAPI
 
-
 -(NSString*) slackTeamURL :(NSString*)token
 {
     NSString *urlstring = @"";
@@ -20,10 +19,5 @@
     urlstring = [urlstring stringByAppendingString:@"&presence=1"];
     return urlstring;
 }
-
-
-
-
-
 
 @end

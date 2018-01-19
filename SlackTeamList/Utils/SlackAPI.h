@@ -9,11 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface SlackAPI : NSObject
-{
-    
-    
-}
 
--(NSString*) slackTeamURL :(NSString*)token;
+    -(NSString*) slackTeamURL :(NSString*)token;
 
 @end
